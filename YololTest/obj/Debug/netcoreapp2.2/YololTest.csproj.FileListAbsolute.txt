@@ -1,0 +1,11 @@
+C:\Users\riba.daniel\source\repos\YololTest\YololTest\bin\Debug\netcoreapp2.2\YololTest.deps.json
+C:\Users\riba.daniel\source\repos\YololTest\YololTest\bin\Debug\netcoreapp2.2\YololTest.runtimeconfig.json
+C:\Users\riba.daniel\source\repos\YololTest\YololTest\bin\Debug\netcoreapp2.2\YololTest.runtimeconfig.dev.json
+C:\Users\riba.daniel\source\repos\YololTest\YololTest\bin\Debug\netcoreapp2.2\YololTest.dll
+C:\Users\riba.daniel\source\repos\YololTest\YololTest\bin\Debug\netcoreapp2.2\YololTest.pdb
+C:\Users\riba.daniel\source\repos\YololTest\YololTest\obj\Debug\netcoreapp2.2\YololTest.csprojAssemblyReference.cache
+C:\Users\riba.daniel\source\repos\YololTest\YololTest\obj\Debug\netcoreapp2.2\YololTest.csproj.CoreCompileInputs.cache
+C:\Users\riba.daniel\source\repos\YololTest\YololTest\obj\Debug\netcoreapp2.2\YololTest.AssemblyInfoInputs.cache
+C:\Users\riba.daniel\source\repos\YololTest\YololTest\obj\Debug\netcoreapp2.2\YololTest.AssemblyInfo.cs
+C:\Users\riba.daniel\source\repos\YololTest\YololTest\obj\Debug\netcoreapp2.2\YololTest.dll
+C:\Users\riba.daniel\source\repos\YololTest\YololTest\obj\Debug\netcoreapp2.2\YololTest.pdb
