@@ -8,10 +8,11 @@ namespace YololTest
 {
 	class Tokenizer
 	{
-		private static readonly Regex operatorsRegex = new Regex(@"\G[+\-*/<>=!%]+", RegexOptions.Compiled);
+		private static readonly Regex operatorsRegex = new Regex(@"\G[+\-*/<>=!%\^]+", RegexOptions.Compiled);
 		private static readonly Regex stringRegex = new Regex(@"\G\"".*?\""", RegexOptions.Compiled);
 		private static readonly Regex numberRegex = new Regex(@"\G\d+(\.\d+)?[a-z]*", RegexOptions.Compiled);
 		private static readonly Regex identifierRegex = new Regex(@"\G\:?(?:[a-z][a-z0-9]*)", RegexOptions.Compiled);
+		private static readonly Regex parenthesisRegex = new Regex(@"\G(\(|\))", RegexOptions.Compiled);
 		private static readonly string commentPrefix = "//";
 
 		public Token[] ParseLine(string line)
@@ -57,6 +58,10 @@ namespace YololTest
 				else if (TryMatch(line, index, identifierRegex, out value))
 				{
 					ret.Add(new Token(value, TokenType.Identifier));
+				}
+				else if (TryMatch(line, index, parenthesisRegex, out value))
+				{
+					ret.Add(new Token(value, TokenType.Parenthesis));
 				}
 				else
 				{
@@ -120,5 +125,6 @@ namespace YololTest
 		Identifier = 2,
 		String = 3,
 		Number = 4,
+		Parenthesis = 5,
 	}
 }

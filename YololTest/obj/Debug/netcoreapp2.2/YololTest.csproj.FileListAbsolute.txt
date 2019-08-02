@@ -9,3 +9,14 @@ C:\Users\riba.daniel\source\repos\YololTest\YololTest\obj\Debug\netcoreapp2.2\Yo
 C:\Users\riba.daniel\source\repos\YololTest\YololTest\obj\Debug\netcoreapp2.2\YololTest.AssemblyInfo.cs
 C:\Users\riba.daniel\source\repos\YololTest\YololTest\obj\Debug\netcoreapp2.2\YololTest.dll
 C:\Users\riba.daniel\source\repos\YololTest\YololTest\obj\Debug\netcoreapp2.2\YololTest.pdb
+C:\Users\rabirland\source\repos\YololInterpreter\YololTest\bin\Debug\netcoreapp2.2\YololTest.deps.json
+C:\Users\rabirland\source\repos\YololInterpreter\YololTest\bin\Debug\netcoreapp2.2\YololTest.runtimeconfig.json
+C:\Users\rabirland\source\repos\YololInterpreter\YololTest\bin\Debug\netcoreapp2.2\YololTest.runtimeconfig.dev.json
+C:\Users\rabirland\source\repos\YololInterpreter\YololTest\bin\Debug\netcoreapp2.2\YololTest.dll
+C:\Users\rabirland\source\repos\YololInterpreter\YololTest\bin\Debug\netcoreapp2.2\YololTest.pdb
+C:\Users\rabirland\source\repos\YololInterpreter\YololTest\obj\Debug\netcoreapp2.2\YololTest.csprojAssemblyReference.cache
+C:\Users\rabirland\source\repos\YololInterpreter\YololTest\obj\Debug\netcoreapp2.2\YololTest.csproj.CoreCompileInputs.cache
+C:\Users\rabirland\source\repos\YololInterpreter\YololTest\obj\Debug\netcoreapp2.2\YololTest.AssemblyInfoInputs.cache
+C:\Users\rabirland\source\repos\YololInterpreter\YololTest\obj\Debug\netcoreapp2.2\YololTest.AssemblyInfo.cs
+C:\Users\rabirland\source\repos\YololInterpreter\YololTest\obj\Debug\netcoreapp2.2\YololTest.dll
+C:\Users\rabirland\source\repos\YololInterpreter\YololTest\obj\Debug\netcoreapp2.2\YololTest.pdb

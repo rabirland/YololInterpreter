@@ -8,9 +8,10 @@ namespace YololTest
 	class Lexer
 	{
 		private static readonly string[] functions = { "sqrt", "sin", "cos", "tan", "arcsin", "arccos", "arctan" };
-		private static readonly string[] keywords = { "if", "else", "end", "goto" };
+		private static readonly string[] keywords = { "if", "then", "else", "end", "goto" };
 		private static readonly string[] unaryOperators = { "++", "--", "!" };
 		private static readonly string[] dualOperators = { "+", "-", "*", "/", "%", "^", "=", "+=", "-=", "*=", "/=", /*Logic: */ "<", ">", "<=", ">=", "!=", "==" };
+		private static readonly string[] parenthesis = { "(", ")" };
 
 		public Lex[] TranslateLine(Token[] tokens)
 		{
@@ -73,6 +74,20 @@ namespace YololTest
 							ret.Add(new Lex(token.Value, LexType.Identifier));
 						}
 						break;
+					case TokenType.Parenthesis:
+						if (token.Value == "(")
+						{
+							ret.Add(new Lex(token.Value, LexType.OpenParenthesis));
+						}
+						else if (token.Value ==")")
+						{
+							ret.Add(new Lex(token.Value, LexType.CloseParenthesis));
+						}
+						else
+						{
+							throw new Exception("Unexpected error");
+						}
+						break;
 					case TokenType.Unknown: throw new Exception("Unknown token type");
 				}
 			}
@@ -110,5 +125,8 @@ namespace YololTest
 		Function,
 		ExternalIdentifier,
 		Identifier,
+
+		OpenParenthesis,
+		CloseParenthesis,
 	}
 }

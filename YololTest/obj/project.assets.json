@@ -552,11 +552,12 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "R73gEjqCkI2Nw/IlN8QvcgPNklqQiPowp47JwvW0Bnp/RZnjN4UrJwEvWVJWRK1MsQ+HIfGe9i4aQlfK+ei9jA==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -686,23 +687,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\riba.daniel\\.nuget\\packages\\": {},
+    "C:\\Users\\rabirland\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\riba.daniel\\source\\repos\\YololTest\\YololTest\\YololTest.csproj",
+      "projectUniqueName": "C:\\Users\\rabirland\\source\\repos\\YololInterpreter\\YololTest\\YololTest.csproj",
       "projectName": "YololTest",
-      "projectPath": "C:\\Users\\riba.daniel\\source\\repos\\YololTest\\YololTest\\YololTest.csproj",
-      "packagesPath": "C:\\Users\\riba.daniel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\riba.daniel\\source\\repos\\YololTest\\YololTest\\obj\\",
+      "projectPath": "C:\\Users\\rabirland\\source\\repos\\YololInterpreter\\YololTest\\YololTest.csproj",
+      "packagesPath": "C:\\Users\\rabirland\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rabirland\\source\\repos\\YololInterpreter\\YololTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\riba.daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rabirland\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
