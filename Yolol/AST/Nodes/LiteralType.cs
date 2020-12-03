@@ -3,6 +3,6 @@
 	public enum LiteralType
 	{
 		Numeric = 1,
-		Text = 2,
+		String = 2,
 	}
 }

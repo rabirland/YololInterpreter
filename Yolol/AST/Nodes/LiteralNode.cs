@@ -3,7 +3,7 @@
 	public record LiteralNode : IValueNode
 	{
 		/// <summary>
-		/// The value of the literal. In case of text, without the wrapping quotions, and escaped characters unescaped.
+		/// The value of the literal. In case of text, without the wrapping quotions.
 		/// In case of numbers, the more than 3 digits stripped.
 		/// </summary>
 		public string Value { get; init; }
