@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Codes\\Home\\YololInterpreter\\YololTest\\YololTest.csproj": {}
+    "E:\\Codes\\YololInterpreter\\YololTest\\YololTest.csproj": {}
   },
   "projects": {
-    "E:\\Codes\\Home\\YololInterpreter\\YololTest\\YololTest.csproj": {
+    "E:\\Codes\\YololInterpreter\\YololTest\\YololTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Codes\\Home\\YololInterpreter\\YololTest\\YololTest.csproj",
+        "projectUniqueName": "E:\\Codes\\YololInterpreter\\YololTest\\YololTest.csproj",
         "projectName": "YololTest",
-        "projectPath": "E:\\Codes\\Home\\YololInterpreter\\YololTest\\YololTest.csproj",
-        "packagesPath": "C:\\Users\\driba\\.nuget\\packages\\",
-        "outputPath": "E:\\Codes\\Home\\YololInterpreter\\YololTest\\obj\\",
+        "projectPath": "E:\\Codes\\YololInterpreter\\YololTest\\YololTest.csproj",
+        "packagesPath": "C:\\Users\\Rabir\\.nuget\\packages\\",
+        "outputPath": "E:\\Codes\\YololInterpreter\\YololTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\driba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rabir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Codes\\Home\\YololInterpreter\\Yolol\\Yolol.csproj": {
-                "projectPath": "E:\\Codes\\Home\\YololInterpreter\\Yolol\\Yolol.csproj"
+              "E:\\Codes\\YololInterpreter\\Yolol\\Yolol.csproj": {
+                "projectPath": "E:\\Codes\\YololInterpreter\\Yolol\\Yolol.csproj"
               }
             }
           }
@@ -58,21 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-rc.2.20479.15\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Codes\\Home\\YololInterpreter\\Yolol\\Yolol.csproj": {
+    "E:\\Codes\\YololInterpreter\\Yolol\\Yolol.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Codes\\Home\\YololInterpreter\\Yolol\\Yolol.csproj",
+        "projectUniqueName": "E:\\Codes\\YololInterpreter\\Yolol\\Yolol.csproj",
         "projectName": "Yolol",
-        "projectPath": "E:\\Codes\\Home\\YololInterpreter\\Yolol\\Yolol.csproj",
-        "packagesPath": "C:\\Users\\driba\\.nuget\\packages\\",
-        "outputPath": "E:\\Codes\\Home\\YololInterpreter\\Yolol\\obj\\",
+        "projectPath": "E:\\Codes\\YololInterpreter\\Yolol\\Yolol.csproj",
+        "packagesPath": "C:\\Users\\Rabir\\.nuget\\packages\\",
+        "outputPath": "E:\\Codes\\YololInterpreter\\Yolol\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\driba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rabir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -112,7 +112,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-rc.2.20479.15\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

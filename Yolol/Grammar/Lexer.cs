@@ -12,10 +12,9 @@ namespace Yolol.Grammar
         private static readonly Regex identifierRegex = new Regex(@"\:?[a-zA-Z]+", RegexOptions.Compiled);
 
         private static readonly string[] textOperators = new[] { "ABS", "SQRT", "SIN", "COS", "TAN", "ASIN", "ACOS", "ATAN", "NOT", "AND", "OR" };
-        private static readonly string[] commands = new[] { "GOTO" };
-        private static readonly string[] keywords = new[] { "IF", "THEN", "ELSE", "END" };
+        private static readonly string[] keywords = new[] { "IF", "THEN", "ELSE", "END", "GOTO" };
         // Must be DESC ordered by length
-        private static readonly string[] validOperators = new[] { "++", "--", "+=", "-=", "*=", "/=", "%=", "=", "+", "-", "*", "/", "%", "^", "!", };
+        private static readonly string[] validOperators = new[] { "++", "--", "+=", "-=", "*=", "/=", "%=", ">=", "<=", "!=", "==", "=", "+", "-", "*", "/", "%", "^", "!", ">", "<" };
         private static readonly string[] afterIdentifierOperators = new[] { "++", "--" };
         private static readonly string[] beforeIdentifierOperators = new[] { "++", "--" };
 
@@ -25,6 +24,9 @@ namespace Yolol.Grammar
             List<Lex> ret = new List<Lex>();
             LexType? previousLexType = null;
             int pos = 0;
+            int bracketLevel = 0;
+            int ifEndLevel = 0;
+            int thenLevel = 0;
 
             while (pos < line.Length)
             {
@@ -40,6 +42,30 @@ namespace Yolol.Grammar
                     ret.Add(lex.Value);
                     previousLexType = lex.Value.Type;
                     pos += lex.Value.Length;
+
+                    if (lex.Value.Type == LexType.Keyword)
+					{
+                        if (lex.Value.Part == "IF")
+						{
+                            ifEndLevel++;
+                        }
+                        else if (lex.Value.Part == "END")
+						{
+                            if (ifEndLevel > thenLevel)
+							{
+                                throw new Exception("Missing then branch of if-else statement");
+							}
+                            ifEndLevel--;
+						}
+					}
+                    else if (lex.Value.Type == LexType.OpenBracket)
+					{
+                        bracketLevel++;
+					}
+                    else if (lex.Value.Type == LexType.CloseBracket)
+                    {
+                        bracketLevel--;
+                    }
                 }
                 else if (pos < line.Length)
                 {
@@ -47,6 +73,14 @@ namespace Yolol.Grammar
                 }
             }
 
+            if (ifEndLevel > 0)
+			{
+                throw new Exception("Unclosed if-end statement");
+			}
+            else if (bracketLevel > 0)
+			{
+                throw new Exception("Unclosed brackets");
+			}
             return ret;
         }
 
@@ -87,10 +121,6 @@ namespace Yolol.Grammar
                     if (textOperators.Contains(identifier))
                     {
                         return new Lex() { Part = identifier, Start = pos, Length = identifier.Length, Type = LexType.Operator };
-                    }
-                    else if (commands.Contains(identifier))
-                    {
-                        return new Lex() { Part = identifier, Start = pos, Length = identifier.Length, Type = LexType.Command };
                     }
                     else if (keywords.Contains(identifier))
                     {

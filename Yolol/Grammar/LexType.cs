@@ -18,7 +18,5 @@
         Keyword,
 
         Operator,
-
-        Command,
     }
 }
